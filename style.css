@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.main{
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr auto;
+    grid-template-areas: 
+    "text card";
+}
+.text{
+    grid-area: text;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8rem 0 11rem;
+}
+.text h1{
+    font-size: 4.5rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+}
+.text p{
+    font-size: 1.3rem;
+}
+.card{
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card .try{
+    height: 5rem;
+    width: 42rem;
+    color: #fff;
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px rgb(62 60 73 / 30%);
+}
+.try span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.form_input{
+    height: 42rem;
+    width: 42rem;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 12px rgb(62 60 73 / 30%);
+    padding-top: 1rem;
+}
+input{
+    width: 34rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.error{
+    background: url(/images/icon-error.svg) no-repeat;
+    background-size: 1.8rem;
+    background-position: 30rem;
+}
+.form_error {
+    display: none;
+    position: relative;
+    right: -10rem;
+    top: -1rem;
+    color: hsl(0, 100%, 74%);
+    font-style: italic
+}
+input:focus{
+    border: 1px solid #6053a3;
+    border-radius: 10px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34rem;
+}
+.form_input .submit{
+    width: 34rem;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    box-shadow: 0 6px hsl(154deg 59% 40%);
+}
+.form_input p{
+    font-size: .8rem;
+    font-weight: 500;
+    opacity: .5;
+    padding-top: 1rem;
+}
+.form_input span{
+    color: hsl(0, 100%, 35%);
+    font-weight: 700;
+    font-size: .9rem;
+}
+.attribution {font-size: 20px;text-align: center;position: relative;bottom: -1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1440px) {
+    .text{
+        padding: 0 8rem 0 6rem;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .card .try{
+        height: 4rem;
+        width: 38rem;
+    }
+    .form_input{
+        height: 40rem;
+        width: 38rem;
+    }
+    input{
+        width: 33rem;
+        height: auto;
+        font-weight: 500;
+    }
+    .form_input .submit{
+        width: 33rem;
+        letter-spacing: .05rem;
+    }
+}
+@media (max-width: 1024px) {
+    .text {
+        padding: 0 2rem 0 2rem;
+    }
+    .text h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        line-height: 2.8rem;
+    }
+    .card .try{
+        width: 30rem;
+    }
+    .form_input{
+        width: 30rem;
+    }
+    input{
+        width: 26rem;
+    }
+    .error {
+        background-size: 1.5rem;
+        background-position: 22rem;
+    }
+    .form_error {
+        right: -7rem;
+        font-size: 13px;
+    }
+    .form_input .submit{
+        width: 26rem;
+    }
+    .form_input p {
+        font-size: .65rem;
+    }
+}
+@media (max-width: 768px) and (min-height: 850px) {
+    .main {
+        height: 120vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 21rem 39rem auto;
+        grid-template-areas: 
+        "text"
+        "card";
+    }
+    .text {
+        padding: 0 14rem 0 14rem;
+        height: 18rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .text p {
+        font-size: .95rem;
+    }
+    .card {
+        grid-area: card;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card .try {
+        width: 24rem;
+        height: 8rem;
+        padding: 0 4rem;
+        font-size: 1.2rem;
+    }
+    .form_input{
+        width: 24rem;
+        height: 50rem;
+    }
+    .error {
+        background-position: 17rem;
+    }
+    .form_error{
+        right: -4rem;
+    }
+    input{
+        width: 20rem;
+    }
+    .btn {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25rem;
+    }
+    .form_input .submit{
+        width: 20rem;
+        font-size: 1rem;
+    }
+    .form_input p {
+        font-size: .7rem;
+        padding: 0.5rem 3rem 1rem 3rem;
+        text-align: center;
+    }
+    .form_input span {
+        font-size: .8rem;
+    }
+
+}
+@media (max-width: 600px) and (min-height: 850px) {
+    .main {
+        height: 120vh;
+        grid-template-rows: 22rem 40rem auto;
+    }
+    .text{
+        padding: 2rem 9rem 0 9rem;
+        height: 33rem;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+    }
+    .card .try {
+        width: 350px;
+        height: 8rem;
+        padding: 0 4rem;
+        font-size: 1.2rem;
+    }
+    .form_input{
+        width: 350px;
+        height: 50rem;
+    }
+    .error {
+        background-position: 16rem;
+    }
+    input{
+        width: 300px;
+    }
+    .form_error {
+        right: -3.5rem;
+    }
+    .form_input .submit{
+        width: 300px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 425px) {
+    .main {
+        grid-template-rows: 20rem 40rem auto;
+    }
+    .text{
+        padding: 4rem 4rem 0 4rem;
+    }
+    .form_error {
+        font-size: 12px;
+    }
+}
+@media (max-width: 375px) {
+    .text {
+        padding: 4rem 3rem 0 3rem;
+    }
+}

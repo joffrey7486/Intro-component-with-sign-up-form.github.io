@@ -6,7 +6,7 @@
     font-size: 16px;
 }
 .main{
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(https://github.com/joffrey7486/Intro-component-with-sign-up-form.github.io/blob/main/images/bg-intro-desktop.png?raw=true);
     background-color: hsl(0, 100%, 74%);
     height: 100vh;
     width: 100vw;
@@ -78,7 +78,7 @@ input{
     border: 1px solid hsl(246, 25%, 77%);
 }
 .error{
-    background: url(/images/icon-error.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/joffrey7486/Intro-component-with-sign-up-form.github.io/aa3115be6229e172be4e5637cd213d23b2619033/images/icon-error.svg) no-repeat;
     background-size: 1.8rem;
     background-position: 30rem;
 }

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="app.js"></script>
+  
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -25,7 +25,7 @@
     </div>
     <div class="card">
       <button class="try"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
-      <form class="form_input">
+      <form class="form_input" id="form_input" novalidate>
         <input class="name" type="text" name="name" id="name" placeholder="First Name " required>
         <div class="form_error">First Name cannot be empty</div>
         <input class="last_name" type="text" name="last_name" id="last_name" placeholder="Last Name " required>
@@ -35,30 +35,13 @@
         <input class="password" type="text" name="password" id="password" placeholder="Password" required>
         <div class="form_error">Password cannot be empty</div>
         <div class="btn">
-          <button class="submit" type="submit">Claim your free trial </button>
+          <button class="submit" type="submit" id="submit">Claim your free trial </button>
           <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </div>
         
       </form>
     </div>
   </div>
-
-
-
-  
-
-  
-
-  
-
-  
-  
-  
-  
-
- 
-
-  
   
   <footer>
     <div class="attribution">
@@ -67,5 +50,6 @@
       <a href="https://github.com/joffrey7486">C.Joffrey/GitHub</a>.
     </div>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,12 +1,7 @@
 // define all variable
 let form_input = document.getElementById('form_input')
 let input = document.getElementsByTagName('input')
-
-let firstName = document.getElementById('name')
-let lastName = document.getElementById('last_name')
 let email = document.getElementById('email')
-let password = document.getElementById('password')
-let submit = document.getElementById('submit')
 
 let form_error = document.getElementsByClassName('form_error')
 let error = document.getElementsByClassName('error')

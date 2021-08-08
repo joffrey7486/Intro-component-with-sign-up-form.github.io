@@ -275,20 +275,20 @@ input:focus{
         font-size: 1.2rem;
     }
     .form_input{
-        width: 350px;
+        width: 20rem;
         height: 50rem;
     }
     .error {
         background-position: 16rem;
     }
     input{
-        width: 300px;
+        width: 18rem;
     }
     .form_error {
         right: -3.5rem;
     }
     .form_input .submit{
-        width: 300px;
+        width: 18rem;
         font-size: 1rem;
     }
 }

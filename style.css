@@ -269,7 +269,7 @@ input:focus{
         justify-content: flex-start;
     }
     .card .try {
-        width: 350px;
+        width: 20rem;
         height: 8rem;
         padding: 0 4rem;
         font-size: 1.2rem;
